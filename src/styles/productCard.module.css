@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.card img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.card article {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10% 5%;
+}
+
+.card article h2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card article h3 {
+  font-size: 16px;
+}
+
+.card article div {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.card div p:first-of-type {
+  font-size: 12px;
+  align-self: center;
+}
+
+.card div p:last-of-type {
+  font-size: 18px;
+  color: var(--lightgreen);
+  font-weight: 600;
+}
