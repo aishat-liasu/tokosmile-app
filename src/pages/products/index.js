@@ -5,6 +5,14 @@ import styles from '@/styles/products.module.css';
 import Layout from '@/components/layout';
 
 export default function ProductPage() {
+  const iconStyle = {
+    fontSize: '24px',
+  };
+
+  const greyDotStyle = {
+    color: '#7c7a7a',
+  };
+
   return (
     <>
       <Head>
@@ -15,36 +23,73 @@ export default function ProductPage() {
       </Head>
       <div className={styles.product}>
         <header className={styles.header}>
-          <Link href="/">&lt;</Link>
+          <Link href="/">
+            <i className="bi bi-chevron-left" style={iconStyle}></i>
+          </Link>
 
-          <span>
-            <button>Like</button>
-            <button>Share</button>
-            <button>Cart</button>
-          </span>
+          <ul>
+            <li>
+              <i className="bi bi-heart" style={iconStyle}></i>
+            </li>
+            <li>
+              <i className="bi bi-share" style={iconStyle}></i>
+            </li>
+            <li>
+              <i className="bi bi-bag" style={iconStyle}></i>
+            </li>
+          </ul>
         </header>
         <Image
-          src="/images/t-shirt.png"
+          src="/images/main-tshirt.png"
           alt="A classic Tshirt for males"
           width={400}
           height={400}
         />
-        <article>
-          <h2>Shirt</h2>
+        <article className={styles.productSummary}>
+          <h2>
+            <span>
+              <i className="bi bi-shop"></i>
+            </span>{' '}
+            tokobaju.id{' '}
+          </h2>
           <h3>Essential Men's Short-Sleeve CrewNeck T-shirt</h3>
-          <p>4.9 Ratings . 2.3k Reviews . 2.9k+ sold</p>
+
+          <ul className={styles.productRating}>
+            <li>
+              <span>
+                <i className="bi bi-star-fill" style={{ color: 'gold' }}></i>
+              </span>{' '}
+              4.9 Ratings
+            </li>
+
+            <li>
+              <i className="bi bi-dot" style={greyDotStyle}></i>
+            </li>
+            <li>2.3k Reviews</li>
+            <li>
+              <i className="bi bi-dot" style={greyDotStyle}></i>
+            </li>
+            <li>2.9k+ sold</li>
+          </ul>
         </article>
+        <nav>
+          <span>About Item</span>
+          <span>Reviews</span>
+        </nav>
 
         <footer className={styles.footer}>
-          <article>
+          <article className={styles.price}>
             <h3>Total Price</h3>
             <p>$32.00</p>
           </article>
 
-          <span>
-            <button>Cart</button>
+          <article className={styles.buy}>
+            <span>
+              <i className="bi bi-bag" style={{ fontSize: '18px' }}></i>
+              {`  `}1
+            </span>
             <button>Buy Now</button>
-          </span>
+          </article>
         </footer>
       </div>
     </>
