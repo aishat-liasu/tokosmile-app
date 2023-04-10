@@ -21,7 +21,7 @@ export default function ProductCard() {
       />
       <article>
         <h2>Shirt</h2>
-        <h3>Essential Men's Short-Sleeve CrewNeck T-shirt</h3>
+        <h3>Essential Men&apos;s Short-Sleeve CrewNeck T-shirt</h3>
         <div>
           <p>
             <span>
