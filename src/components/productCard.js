@@ -27,8 +27,7 @@ export default function ProductCard() {
             <span>
               <i className="bi bi-star-fill" style={{ color: 'gold' }}></i>
             </span>
-            {` `}
-            4.9 | 2539
+            &nbsp; 4.9 | 2539
           </p>
           <p>$32.00</p>
         </div>

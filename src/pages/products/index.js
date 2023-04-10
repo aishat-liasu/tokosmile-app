@@ -48,8 +48,8 @@ export default function ProductPage() {
           <h2>
             <span>
               <i className="bi bi-shop"></i>
-            </span>{' '}
-            tokobaju.id{' '}
+            </span>
+            &nbsp; tokobaju.id
           </h2>
           <h3>Essential Men's Short-Sleeve CrewNeck T-shirt</h3>
 
@@ -57,8 +57,8 @@ export default function ProductPage() {
             <li>
               <span>
                 <i className="bi bi-star-fill" style={{ color: 'gold' }}></i>
-              </span>{' '}
-              4.9 Ratings
+              </span>
+              &nbsp; 4.9 Ratings
             </li>
 
             <li>
@@ -85,7 +85,7 @@ export default function ProductPage() {
           <article className={styles.buy}>
             <span>
               <i className="bi bi-bag" style={{ fontSize: '18px' }}></i>
-              {`  `}1
+              &nbsp;1
             </span>
             <button>Buy Now</button>
           </article>
