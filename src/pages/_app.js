@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { Inter } from 'next/font/google';
 
