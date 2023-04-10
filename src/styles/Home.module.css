@@ -3,9 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 5% 100px;
+  padding: 0 0 100px;
   min-height: 100vh;
   background-color: var(--lightgrey);
+  max-width: 800px;
 }
 
 .nav {
@@ -32,7 +33,14 @@
 
 .nav ul li {
   padding: 0;
-  padding-top: 10px;
+  font-size: 14px;
+}
+
+.nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .header {
@@ -45,32 +53,60 @@
   background: transparent;
   z-index: 10;
   backdrop-filter: blur(24px);
-  padding: 15px 15px;
+  padding: 20px 5%;
   max-width: 800px;
 }
 
 .header form {
-  width: 65%;
+  width: 75%;
 }
 
-.header form div {
+.searchInput {
   display: flex;
+  align-items: center;
 }
 
-.header form input {
+.searchInput span {
+  padding: 10px 10px;
+  border-radius: 8px 0 0 8px;
+  background-color: var(--white);
+  border: 1px solid var(--darkgrey);
+  border-right-width: 0;
+}
+
+.searchInput input {
   border: 0;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 16px;
+  font-family: inherit;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 10px;
+  font-size: 18px;
   text-align: left;
   width: 100%;
+  border: 1px solid var(--darkgrey);
+  border-left-width: 0;
 }
 
-.header form input:focus-visible {
-  outline-color: #a6a6a6;
+.searchInput input:focus-visible {
+  outline: none;
+}
+
+.hero {
+  min-height: 300px;
+}
+
+.categories {
+  padding: 20px 0;
+}
+
+.categoryIcon {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #c6c5c5;
 }
 
 .bestSellingProducts {
+  padding: 10px 5%;
 }
 
 .bestSellingProducts > article {
@@ -88,39 +124,4 @@
   display: grid;
   grid-template-columns: repeat(2, 50fr);
   gap: 25px 15px;
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
 }
