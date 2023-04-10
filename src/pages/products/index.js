@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
 import styles from '@/styles/products.module.css';
-import Layout from '@/components/layout';
 
 export default function ProductPage() {
   const iconStyle = {
